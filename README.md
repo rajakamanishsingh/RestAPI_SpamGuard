@@ -43,14 +43,11 @@ This will create random, sample data for testing the API.
 # Testing the API
 You can use tools like Postman or cURL to test the API endpoints. Make sure to include the required headers and request data as specified in each endpoint.
 
-For example, to register a new user using cURL:
+<br>`curl http://localhost:8000/search_by_name/John/`<br/>
 
-<br>`curl -X POST -H "Content-Type: application/json" -d '{
-    "name": "John Doe",
-    "phone_number": "1234567890",
-    "email": "john@example.com",
-    "password": "secretpassword"
-}' http://localhost:8000/register_user/`<br/>
+<br>`curl http://localhost:8000/search_by_phone_number/1234567890/`<br/>
+
+<br>`curl http://localhost:8000/mark_spam/1234567890/`<br/>
 
 # Usage
 This API is intended to be consumed by a mobile app or other frontend applications. The API provides endpoints for user registration, marking spam, and searching for names by phone number. It returns JSON responses that can be parsed and used by the frontend to display information to users.
