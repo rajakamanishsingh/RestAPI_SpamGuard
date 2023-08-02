@@ -21,22 +21,24 @@ Automatic import of user's phone contacts into the app's database (not implement
 To set up and run the API on your local machine, follow these steps:
 
 1. Clone the repository to your local machine.
-<br>`git clone https://github.com/rajakamanishsingh/RestAPI_SpamGuard/'<br/>
+<br>
+`git clone https://github.com/rajakamanishsingh/RestAPI_SpamGuard/`
+<br/>
 3. Create a virtual environment and activate it (optional, but recommended).
 4. Install the required dependencies using pip: <br>
-`pip install -r requirements.txt'
+`pip install -r requirements.txt`
  <br/>
  
 5. Move Inside the Directory:   <br>
 `cd RestAPI_SpamGuard`
  <br/>
 5. Apply database migrations:
-<br>'python manage.py migrate'<br/>
+<br>`python manage.py migrate`<br/>
 
 6. Create a superuser to access the Django admin interface:
-<br>'python manage.py createsuperuser'<br/>
+<br>`python manage.py createsuperuser`<br/>
 7. Run the development server:
-<br>'python manage.py runserver'<br/>
+<br>`python manage.py runserver`<br/>
 8. Access the API at http://localhost:8000/api/.
 API Endpoints
 The API provides the following endpoints:
@@ -47,7 +49,7 @@ GET /search_by_phone_number/<str:phone_number>/: Search for names associated wit
 # Data Population
 To test the API, you can use the included script or facility to populate the database with sample data. Run the following command:
 
-<br>'python manage.py populate_data'<br/>
+<br>`python manage.py populate_data`<br/>
 This will create random, sample data for testing the API.
 
 # Testing the API
@@ -55,12 +57,12 @@ You can use tools like Postman or cURL to test the API endpoints. Make sure to i
 
 For example, to register a new user using cURL:
 
-<br>'curl -X POST -H "Content-Type: application/json" -d '{
+<br>`curl -X POST -H "Content-Type: application/json" -d '{
     "name": "John Doe",
     "phone_number": "1234567890",
     "email": "john@example.com",
     "password": "secretpassword"
-}' http://localhost:8000/register_user/'<br/>
+}' http://localhost:8000/register_user/`<br/>
 
 # Usage
 This API is intended to be consumed by a mobile app or other frontend applications. The API provides endpoints for user registration, marking spam, and searching for names by phone number. It returns JSON responses that can be parsed and used by the frontend to display information to users.
