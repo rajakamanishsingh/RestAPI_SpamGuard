@@ -20,25 +20,13 @@ Automatic import of user's phone contacts into the app's database (not implement
 # Setup
 To set up and run the API on your local machine, follow these steps:
 
-1. Clone the repository to your local machine.
-<br>
-`git clone https://github.com/rajakamanishsingh/RestAPI_SpamGuard/`
-<br/>
-3. Create a virtual environment and activate it (optional, but recommended).
-4. Install the required dependencies using pip: <br>
-`pip install -r requirements.txt`
- <br/>
- 
-5. Move Inside the Directory:   <br>
-`cd RestAPI_SpamGuard`
- <br/>
-5. Apply database migrations:
-<br>`python manage.py migrate`<br/>
-
-6. Create a superuser to access the Django admin interface:
-<br>`python manage.py createsuperuser`<br/>
-7. Run the development server:
-<br>`python manage.py runserver`<br/>
+1. Clone the repository to your local machine. <br>`git clone https://github.com/rajakamanishsingh/RestAPI_SpamGuard/`<br/>
+2. Create a virtual environment and activate it (optional, but recommended).
+3. Move Inside the Directory:<br>`cd RestAPI_SpamGuard`<br/>
+4. Install the required dependencies using pip: <br>`pip install -r requirements.txt` <br/>
+5. Apply database migrations:<br>`python manage.py migrate`<br/>
+6. Create a superuser to access the Django admin interface:<br>`python manage.py createsuperuser`<br/>
+7. Run the development server:<br>`python manage.py runserver`<br/>
 8. Access the API at http://localhost:8000/api/.
 API Endpoints
 The API provides the following endpoints:
