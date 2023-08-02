@@ -30,10 +30,9 @@ To set up and run the API on your local machine, follow these steps:
 8. Access the API at http://localhost:8000/api/.
 API Endpoints
 The API provides the following endpoints:
-
-POST /mark_spam/: Mark a phone number as spam.
-GET /search_by_name/<str:name_query>/: Search for names in the global database that match the given name query.
-GET /search_by_phone_number/<str:phone_number>/: Search for names associated with the given phone number in the global database.
+<br>POST /mark_spam/: Mark a phone number as spam.<br/>
+<br>GET /search_by_name/<str:name_query>/: Search for names in the global database that match the given name query..<br/>
+<br>GET /search_by_phone_number/<str:phone_number>/: Search for names associated with the given phone number in the global database..<br/>
 # Data Population
 To test the API, you can use the included script or facility to populate the database with sample data. Run the following command:
 
